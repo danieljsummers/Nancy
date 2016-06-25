@@ -159,6 +159,8 @@
         /// <returns>ISession containing the load session values</returns>
         public ISession Load(Request request)
         {
+            this.ExpireOldSessions();
+
             var dictionary = new Dictionary<string, object>();
 
             // Get the session Id from the encrypted cookie

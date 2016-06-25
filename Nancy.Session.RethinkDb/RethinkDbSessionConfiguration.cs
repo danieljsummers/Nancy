@@ -42,7 +42,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="RethinkDbSessionConfiguration"/> class.
         /// </summary>
-        public RethinkDbSessionConfiguration() : base()
+        public RethinkDbSessionConfiguration() : this(null)
         {
         }
 
